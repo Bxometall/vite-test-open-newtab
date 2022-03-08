@@ -14,7 +14,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 function App() {
   const customLink =
-    'https://www.google.com/search?q=My+Custom+Search+On+Google'
+    'https://www.google.com/search?q=My+Custom+Search+On+Google+Some'
 
   const handleClick = useCallback((evt, entityID) => {
     evt.preventDefault()
