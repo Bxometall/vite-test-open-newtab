@@ -6,15 +6,15 @@ import CustomLink from './components/CustomLink'
 import { useCallback, useEffect } from 'react'
 import data from './components/data'
 
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('My+Custom+Query')
+  }, 1000)
+})
+
 function App() {
   const customLink =
     'https://www.google.com/search?q=My+Custom+Search+On+Google'
-
-  const myPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('My+Custom+Query')
-    }, 1000)
-  })
 
   const handleClick = useCallback((evt, entityID) => {
     evt.preventDefault()
